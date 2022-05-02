@@ -20,11 +20,16 @@ main {
 
 .main-login-container {
     width: 50%;
-    height: 90vh;
+    height: 100vh;
+}
+
+.greetings-section {
+    text-align: center;
 }
 
 .login-form {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 80%;
     margin: 0 auto;
 }

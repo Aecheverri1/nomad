@@ -22,10 +22,6 @@ body {
     display: none;
 }
 
-.search-bar-container {
-    display: none;
-}
-
 .header-container-title {
     display: block;
     text-align: center;
@@ -44,11 +40,58 @@ body {
 }
 
 .search-bar-container-heigh {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
 }
 
-.search-bar-container-heigh p {
-    display: none;
+.search-bar-container-heigh div p {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 8px;
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 35px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 8px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.search-bar-container form {
+    width: 85%;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar-container form input {
+    width: 85%;
+    height: 28px;
+    border: none;
+}
+
+.search-bar-container form input:focus {
+    outline: none;
+}
+
+.search-bar-container button {
+    background: none;
+    border: none;
+    margin-left: 6px;
+    padding-top: 2px;
+    color: rgb(245, 124, 2);
+    cursor: pointer;
 }
 
 .container {
