@@ -25,3 +25,27 @@ function showSlides() {
 }
 
 showSlides();
+
+
+const userData = [
+    {
+        user: "jhon25",
+        password: "jhon1522"
+    }
+]
+
+function logIn() {
+
+    let userName = document.getElementById("loginUsername");
+    let userNameValue = userName.value;
+    let userPassword = document.getElementById("loginPassword");
+    let userPasswordValue = userPassword.value;
+
+    if (userData[0].user == userNameValue && userData[0].password == userPasswordValue) {
+
+        window.location.assign("../html/home.html")
+    }
+    else {
+        alert("Wrong username or password")
+    }
+};

@@ -51,14 +51,14 @@ header h1 {
     margin: 10px auto;
     text-align: left;
     padding: 8px;
-    border-radius: 8px;
+    border-radius: 4px;
     transition: .3s;
     cursor: pointer;
 }
 
 .menu-container li:hover {
     background-color: rgba(255, 255, 255, 0.183);
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 0 4px 6px rgba(46, 46, 46, 0.215);
 }
 
