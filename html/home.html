@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/home-desktop.css">
+    <link rel="stylesheet" href="../css/home-mobile.css">
+    <link rel="stylesheet" href="../css/home-desktop.css" media="screen and (min-width: 1000px)">
     <title>Home | Nomad</title>
 </head>
 <body>
@@ -43,36 +44,43 @@
         </header>
         <main>
             <div class="main-content">
+                <p class="search-bar-text">Look for your next destination here</p>
                 <section class="searchbar-container">
-                    <input type="text" placeholder="Look for yur next destination here">
+                    <input type="text">
                     <i class="fa-solid fa-magnifying-glass fa-2x"></i>
                 </section>
                 <h2>Recommended for you</h2>
                 <section class="recommendations-section">
                     <section class="recommendations-background">
                         <div class="recommendations-container">
-                            <i class="fa-solid fa-angle-left fa-3x"></i>
+                            <i class="fa-solid fa-angle-left fa-3x angle"></i>
                             <div class="cards-container">
-                                <article>
+                                <article class="slide">
                                     <a href="#"> <img src="../images/recommended/mexico-city.jpg" alt="An image of Mexico City"></a>
-                                    <b>México City</b>
-                                    <p>México</p>
-                                    <p>USD $780</p>
+                                    <div class="location">
+                                        <b>México City</b>
+                                        <p>México</p>
+                                        <p>USD $780</p>
+                                    </div>
                                 </article>
-                                <article>
+                                <article class="slide">
                                     <a href="#"> <img src="../images/recommended/medellin.jpg" alt="An image of Medellín"></a>
-                                    <b>Medellín</b>
-                                    <p>Colombia</p>
-                                    <p>USD $325</p>
+                                    <div class="location">
+                                        <b>Medellín</b>
+                                        <p>Colombia</p>
+                                        <p>USD $325</p>
+                                    </div>
                                 </article>
-                                <article>
+                                <article class="slide">
                                     <a href="#"> <img src="../images/recommended/san-francisco.jpg" alt="An image of San Francisco bridge"></a>
-                                    <b>San Francisco</b>
-                                    <p>United States</p>
-                                    <p>USD $655</p>
+                                    <div class="location">
+                                        <b>San Francisco</b>
+                                        <p>United States</p>
+                                        <p>USD $655</p>
+                                    </div>
                                 </article>
                             </div>
-                            <i class="fa-solid fa-angle-right fa-3x"></i>
+                            <i class="fa-solid fa-angle-right fa-3x angle"></i>
                         </div>
                     </section>
                 </section>
@@ -80,7 +88,7 @@
                 <section class="best-deals-container">
                     <div class="deal-card">
                         <div class="card-header">
-                            <p>Latest promo: <b>Copa Airlines</b></p>
+                            <b>Copa Airlines</b></p>
                         </div>
                         <div class="card-data">
                             <div class="data-first-section">
@@ -95,7 +103,7 @@
                     </div>
                     <div class="deal-card">
                         <div class="card-header">
-                            <p>Latest promo: <b>Valparaiso Country Resort</b></p>
+                            <b>Valparaiso Resort</b></p>
                         </div>
                         <div class="card-data">
                             <div class="data-first-section">
@@ -170,5 +178,6 @@
         </main>
     </section>
 </body>
+<script src="../javascript/home.js"></script>
 <script src="https://kit.fontawesome.com/0bc9db981c.js" crossorigin="anonymous"></script>
 </html>
